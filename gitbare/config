@@ -1,0 +1,12 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = true
+[remote "origin"]
+	url = git@github.com:zethnest/dotfiles
+	fetch = +refs/heads/config:refs/remotes/origin/config
+[branch "config"]
+	remote = origin
+	merge = refs/heads/config
+[alias]
+	s = status -uno
