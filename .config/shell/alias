@@ -1,0 +1,22 @@
+# vim: ft=sh
+if command -v exa &> /dev/null; then
+	alias ls='exa --group-directories-first --icons'
+else
+	alias ls='ls --group-directories-first --color=auto'
+fi
+
+alias g='git'
+alias ip='ip -c'
+alias ip4='ip -c -4'
+alias ydl='youtube-dl'
+alias ydla='youtube-dl -x'
+
+alias grep='grep --colour=auto'
+alias egrep='egrep --colour=auto'
+alias fgrep='fgrep --colour=auto'
+
+# zsh aliases
+alias cp="cp -i"                                                # Confirm before overwriting something
+alias df='df -h'                                                # Human-readable sizes
+alias free='free -m'                                            # Show sizes in MB
+alias gitu='git add . && git commit && git push'

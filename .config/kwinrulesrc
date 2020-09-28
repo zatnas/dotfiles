@@ -1,0 +1,18 @@
+[$Version]
+update_info=kwinrules.upd:replace-placement-string-to-enum
+
+[1]
+Description=Application settings for scrcpy
+above=true
+aboverule=2
+noborder=true
+noborderrule=2
+opacityactive=100
+opacityactiverule=2
+opacityinactive=30
+opacityinactiverule=2
+wmclass=scrcpy
+wmclassmatch=1
+
+[General]
+count=1
