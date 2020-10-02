@@ -49,26 +49,32 @@ let mapleader='\'
 
 set signcolumn=yes
 
+set undofile
+
 set splitbelow
 set splitright
-set undofile
-set autoindent
+set hidden
+
 set backspace=indent,eol,start
 set complete+=d
-set foldlevelstart=999
-set foldmethod=indent
-set grepprg=grep\ -nsI
-set hidden
+set grepprg=grep\ -rnsI
 set incsearch
 set mouse=a
 set laststatus=2
 set noswapfile
 set shiftround
 set tags=./tags;,tags;
+
+set foldlevelstart=999
+set foldmethod=indent
+
+set iskeyword=@,48-57,192-255 " originally @,48-57,_,192-255
+
 set wildcharm=<C-z>
 set wildmenu
 set wildmode=full
 
+set autoindent
 set tabstop=4
 set shiftwidth=0
 set softtabstop=4

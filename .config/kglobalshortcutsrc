@@ -4,17 +4,17 @@ switch-to-activity-941cd99e-13ab-4423-b0db-d5a82c50b1a2=none,none,Switch to acti
 
 [KDE Keyboard Layout Switcher]
 Switch keyboard layout to English (US)=none,none,Switch keyboard layout to English (US)
-Switch to Next Keyboard Layout=Ctrl+Alt+K,none,Switch to Next Keyboard Layout
+Switch to Next Keyboard Layout=none,none,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
 
 [kaccess]
-Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On and Off
+Toggle Screen Reader On and Off=none,Meta+Alt+S,Toggle Screen Reader On and Off
 _k_friendly_name=Accessibility
 
 [kcm_touchpad]
 Disable Touchpad=Touchpad Off,Touchpad Off,Disable Touchpad
 Enable Touchpad=Touchpad On,Touchpad On,Enable Touchpad
-Toggle Touchpad=Touchpad Toggle,Touchpad Toggle,Toggle Touchpad
+Toggle Touchpad=Ctrl+Battery\tTouchpad Toggle,Touchpad Toggle,Toggle Touchpad
 _k_friendly_name=Touchpad
 
 [kded5]
@@ -27,7 +27,6 @@ _k_friendly_name=KDE Daemon
 {02fb4f98-7fdb-44ef-a115-b9ec0ed6c9b0}=Meta+Ctrl+Volume Up,none,mpc Random
 {31458063-7005-4b10-aa0d-93625b906272}=Meta+Shift+Volume Down,none,mpc Previous
 {42a49015-97cd-4fb7-8f78-d3055ebf781f}=Meta+Return,none,Launch Konsole
-{581d9c2f-f04b-4ddf-9553-39020d8809cf}=Meta+I,none,Start System Settings
 {781361c6-22de-4b23-aa84-6d2e9b9e675d}=Meta+D,none,dmenu
 {94397b66-1298-4d50-b5e5-9c54239d2d59}=Meta+Ctrl+Volume Mute,none,mpc Consume
 {afc0e7a5-a3a2-4077-8a05-2e773e73b203}=Meta+Shift+Volume Up,none,mpc Next
@@ -46,9 +45,9 @@ mic_mute=Microphone Mute,Microphone Mute,Mute Microphone
 mute=Volume Mute,Volume Mute,Mute
 
 [krunner.desktop]
-RunClipboard=Alt+Shift+F2,Alt+Shift+F2,Run command on clipboard contents
+RunClipboard=none,Alt+Shift+F2,Run command on clipboard contents
 _k_friendly_name=KRunner
-_launch=Alt+Space\tAlt+F2\tSearch,Alt+Space\tAlt+F2\tSearch,KRunner
+_launch=none,Alt+Space\tAlt+F2\tSearch,KRunner
 
 [ksmserver]
 Halt Without Confirmation=Ctrl+Alt+Shift+PgDown,none,Halt Without Confirmation
@@ -169,7 +168,7 @@ Window Quick Tile Top=Meta+Up,Meta+Up,Quick Tile Window to the Top
 Window Quick Tile Top Left=Meta+Shift+Up,none,Quick Tile Window to the Top Left
 Window Quick Tile Top Right=Meta+Shift+Right,none,Quick Tile Window to the Top Right
 Window Raise=none,none,Raise Window
-Window Resize=none,none,Resize Window
+Window Resize=Meta+R,none,Resize Window
 Window Shade=none,none,Shade Window
 Window Shrink Horizontal=none,none,Pack Shrink Window Horizontally
 Window Shrink Vertical=none,none,Pack Shrink Window Vertically
@@ -237,10 +236,10 @@ _launch=Print,Print,Launch Spectacle
 
 [org_kde_powerdevil]
 Decrease Keyboard Brightness=Keyboard Brightness Down,Keyboard Brightness Down,Decrease Keyboard Brightness
-Decrease Screen Brightness=Monitor Brightness Down,Monitor Brightness Down,Decrease Screen Brightness
-Hibernate=Hibernate,Hibernate,Hibernate
+Decrease Screen Brightness=Meta+Ctrl+Shift+Volume Down\tMonitor Brightness Down,Monitor Brightness Down,Decrease Screen Brightness
+Hibernate=Meta+Sleep\tHibernate,Hibernate,Hibernate
 Increase Keyboard Brightness=Keyboard Brightness Up,Keyboard Brightness Up,Increase Keyboard Brightness
-Increase Screen Brightness=Monitor Brightness Up,Monitor Brightness Up,Increase Screen Brightness
+Increase Screen Brightness=Monitor Brightness Up\tMeta+Ctrl+Shift+Volume Up,Monitor Brightness Up,Increase Screen Brightness
 PowerDown=Power Down,Power Down,Power Down
 PowerOff=Power Off,Power Off,Power Off
 Sleep=Sleep,Sleep,Suspend
@@ -267,9 +266,9 @@ clipboard_action=Ctrl+Alt+X,Ctrl+Alt+X,Enable Clipboard Actions
 cycleNextAction=none,none,Next History Item
 cyclePrevAction=none,none,Previous History Item
 edit_clipboard=none,none,Edit Contents...
-manage activities=Meta+Q,Meta+Q,Activities...
-next activity=Meta+Tab,Meta+Tab,Walk through activities
-previous activity=Meta+Shift+Tab,Meta+Shift+Tab,Walk through activities (Reverse)
+manage activities=none,Meta+Q,Activities...
+next activity=none,Meta+Tab,Walk through activities
+previous activity=none,Meta+Shift+Tab,Walk through activities (Reverse)
 repeat_action=Ctrl+Alt+R,Ctrl+Alt+R,Manually Invoke Action on Current Clipboard
 show dashboard=Ctrl+F12,Ctrl+F12,Show Desktop
 show-barcode=none,none,Show Barcode...
@@ -281,7 +280,7 @@ toggle do not disturb=none,none,Toggle do not disturb
 
 [systemsettings.desktop]
 _k_friendly_name=System Settings
-_launch=Tools,Tools,System Settings
+_launch=Meta+I\tTools,Tools,System Settings
 
 [yakuake]
 _k_friendly_name=Yakuake
