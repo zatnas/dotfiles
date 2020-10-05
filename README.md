@@ -12,4 +12,10 @@ This is my config files that I have on my system right now. Shell configs are fr
 
 ## Installation
 
+```terminal
+git clone https://github.com/zethnest/dotfiles
+cd dotfiles
+./git checkout -f config
+```
+
 ## Uninstall
