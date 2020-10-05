@@ -1,0 +1,22 @@
+# vim: ft=sh
+
+if ! grep "[ -f \"\$HOME/.config/zsh/zprofile\" ] && emulate sh -c \"source \$HOME/.config/zsh/zprofile\"" /etc/zsh/zprofile > /dev/null
+then
+	echo "Config of zsh will not be loaded"
+	echo "Add"
+	echo "[ -f \"\$HOME/.config/zsh/zprofile\" ] && emulate sh -c \"source \$HOME/.config/zsh/zprofile\""
+	echo "in /etc/zsh/zprofile"
+fi
+
+if ! grep "\[ -f \"\$HOME/.profile\" \] && . \"\$HOME/.profile\"" /etc/bash.bashrc > /dev/null
+then
+	echo "Config of bash will not be loaded"
+	echo "Add"
+	echo "\[ -f \"\$HOME/.profile\" \] && . \"\$HOME/.profile\""
+	echo "in /etc/bash.bashrc"
+fi
+
+GIT_DIR="$PWD/gitbare"
+cd $HOME
+command lazygit -g "$GIT_DIR" -w $HOME
+cd "$GIT_DIR/.."
