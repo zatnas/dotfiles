@@ -8,7 +8,6 @@
 *
 !.profile
 !.config
-!.config/*
 !.config/**
 
 .config/mpd/*
@@ -17,3 +16,25 @@
 .config/vim/plugged
 .config/vim/.netrwhist
 
+.config/Brackets/extensions
+.config/Brackets/cef_data
+.config/Brackets/live-dev-profile
+.config/Brackets/state.json
+
+.config/draw.io
+!.config/draw.io/Preferences
+
+.config/jesseduffield/lazygit/*
+!.config/jesseduffield/lazygit/config.yml
+
+.config/pipewire-media-session/*
+!.config/pipewire-media-session
+
+.config/android
+.config/chromium
+.config/kdeconnect
+.config/libreoffice
+.config/nnn
+.config/opera
+.config/pulse
+.config/syncthing
