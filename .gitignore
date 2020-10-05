@@ -8,6 +8,7 @@
 gitbare/**
 
 !gitbare/HEAD
+!gitbare/description
 !gitbare/branches
 !gitbare/hooks**
 !gitbare/info
