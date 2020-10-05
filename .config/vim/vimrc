@@ -68,7 +68,7 @@ set tags=./tags;,tags;
 set foldlevelstart=999
 set foldmethod=indent
 
-set iskeyword=@,48-57,192-255 " originally @,48-57,_,192-255
+" set iskeyword=@,48-57,192-255 " originally @,48-57,_,192-255
 
 set wildcharm=<C-z>
 set wildmenu
