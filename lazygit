@@ -1,13 +1,5 @@
 # vim: ft=sh
 
-if ! grep "[ -f \"\$HOME/.config/zsh/zprofile\" ] && emulate sh -c \"source \$HOME/.config/zsh/zprofile\"" /etc/zsh/zprofile > /dev/null
-then
-	echo "Config of zsh will not be loaded"
-	echo "Add"
-	echo "[ -f \"\$HOME/.config/zsh/zprofile\" ] && emulate sh -c \"source \$HOME/.config/zsh/zprofile\""
-	echo "in /etc/zsh/zprofile"
-fi
-
 if ! grep "\[ -f \"\$HOME/.profile\" \] && . \"\$HOME/.profile\"" /etc/bash.bashrc > /dev/null
 then
 	echo "Config of bash will not be loaded"
@@ -16,7 +8,16 @@ then
 	echo "in /etc/bash.bashrc"
 fi
 
+if [ ! -z "$(command git --git-dir=./gitbare --work-tree=$HOME status 2>&1 | grep -o "fatal: not a git repository")" ]; then
+	GIT_BARE=$PWD/gitbare
+	cd $GIT_BARE
+	git init --bare
+	cd $OLDPWD
+	unset GIT_BARE
+fi
+
 GIT_DIR="$PWD/gitbare"
 cd $HOME
 command lazygit -g "$GIT_DIR" -w $HOME
 cd "$GIT_DIR/.."
+unset GIT_DIR
