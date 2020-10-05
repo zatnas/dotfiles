@@ -137,3 +137,5 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
+
+if command -v zoxide > /dev/null; then eval "$(zoxide init bash)"; fi

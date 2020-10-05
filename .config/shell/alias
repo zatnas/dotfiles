@@ -13,6 +13,8 @@ alias ydla="ydl -x"
 alias grep="grep --colour=auto"
 alias egrep="egrep --colour=auto"
 alias fgrep="fgrep --colour=auto"
+alias lzg="lazygit"
+alias nnn="nnn -a"
 
 # zsh aliases
 alias cp="cp -i"                                                # Confirm before overwriting something

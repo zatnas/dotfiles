@@ -1,3 +1,9 @@
+[Desktop Entry]
+DefaultProfile=Breath2.profile
+
+[Favorite Profiles]
+Favorites=
+
 [General]
 Close After Last=false
 Config Revision=10
@@ -13,6 +19,11 @@ Show Menu Bar=true
 Show Status Bar=false
 Show Tab Bar=false
 Startup Session=manual
+
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/Downloads/5000-completed,file:$HOME/Downloads/5000-completed
+Recent URLs[$e]=file:$HOME/Downloads/
+detailViewIconSize=0
 
 [KTextEditor Document]
 Allow End of Line Detection=true
@@ -66,6 +77,7 @@ Auto Center Lines=0
 Auto Completion=true
 Backspace Remove Composed Characters=false
 Bookmark Menu Sorting=0
+Bracket Match Preview=false
 Chars To Enclose Selection=
 Default Mark Type=1
 Dynamic Word Wrap=true
@@ -105,8 +117,8 @@ Word Completion Minimal Word Length=3
 Word Completion Remove Tail=true
 
 [KTextEditor::Search]
-Replace History=\\0
-Search History==020  \\\\\\\\\\\\\\\\\\\\$a$
+Replace History=,=650  \\\\\\\\$a,c,=020  \\\\\\\\$a
+Search History==020  \\\\\\\\\\\\\\\\\\\\$a$,650\t_0\t |a ,©,Chidambaranathan,jenitta,020\t__\t |a ,020\t_0\t |a\s
 
 [Konsole]
 AutoSyncronize=true
@@ -115,8 +127,12 @@ RunPrefix=
 SetEditor=false
 
 [MainWindow]
-State=AAAA/wAAAAD9AAAAAAAAAoAAAAHCAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAAAAAhsAAAIEAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
+eDP1 Height 800=546
+eDP1 Width 1280=539
+eDP1 XPosition=741
+eDP1 YPosition=62
 
 [UiSettings]
 ColorScheme=Breath2Dark

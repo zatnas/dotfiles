@@ -18,7 +18,7 @@ n ()
 	# stty lwrap undef
 	# stty lnext undef
 
-	nnn "$@"
+	command nnn -a "$@"
 
 	if [ -f "$NNN_TMPFILE" ]; then
 		. "$NNN_TMPFILE"

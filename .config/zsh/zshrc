@@ -214,3 +214,5 @@ source /home/izzatnasrun/.config/broot/launcher/bash/br
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+
+if command -v zoxide > /dev/null; then eval "$(zoxide init zsh)"; fi
