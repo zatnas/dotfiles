@@ -16,6 +16,8 @@ setopt nobeep													# No beep
 setopt appendhistory											# Immediately append history instead of overwriting
 setopt histignorealldups										# If a new command is a duplicate, remove the older one
 setopt autocd													# if only directory path is entered, cd there.
+setopt inc_append_history
+setopt extended_history
 
 zle -N edit-command-line
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'		# Case insensitive tab completion
@@ -27,8 +29,9 @@ zstyle ':completion:*' accept-exact '*(N)'
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path "$XDG_CACHE_HOME/zsh/cache"
 HISTFILE="$XDG_DATA_HOME/zsh/history"
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=1000000000
+SAVEHIST=1000000000
+HISTTIMEFORMAT="[%F %T]"
 WORDCHARS=${WORDCHARS//\/[&.;]}									# Don't consider certain characters part of the word
 
 
