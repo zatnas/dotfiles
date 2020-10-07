@@ -305,3 +305,5 @@ bind -r C-p select-pane -t .-1 \;  resize-pane -Z
 
 set -g set-titles on
 set -g set-titles-string "#S / #W"
+
+set -g repeat-time 250
