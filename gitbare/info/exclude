@@ -50,6 +50,7 @@
 .config/qgit
 .config/session
 .config/xsettingsd
+.config/systemd/user/default.target.wants
 
 .config/QtProject.conf
 .config/Trolltech.conf
