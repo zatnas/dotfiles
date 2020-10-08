@@ -9,23 +9,24 @@ let g:netrw_home=$XDG_DATA_HOME.'/vim'
 call plug#begin("$XDG_CONFIG_HOME/vim/plugged")
 Plug 'airblade/vim-gitgutter'       " Git diff status
 Plug 'kien/ctrlp.vim'               " Fuzzy finder
+let g:ctrlp_map = ''
+let g:ctrlp_cmd = 'CtrlP'
+nnoremap <C-P> :CtrlPBuffer<CR>
+nnoremap gb :b#<CR>
+
 Plug 'mattn/emmet-vim'              " Emmet for HTML & CSS
+let g:user_emmet_leader_key = '\'
+let g:user_emmet_install_global = 0
+autocmd FileType html,css,php EmmetInstall
+
 Plug 'mg979/vim-visual-multi'       " Sublime Text-like multi cursor
 Plug 'othree/html5.vim'             " Better HTML5
 Plug 'tmhedberg/matchit'            " Better pairing
 Plug 'tpope/vim-surround'           " Better quoting and parenthesizing
 Plug 'tpope/vim-fugitive'           " Git integration
-Plug 'valloric/matchtagalways'      " Highlight closing HTML/XML tags
-Plug 'vim-airline/vim-airline'      " Vim theming
-Plug 'ActivityWatch/aw-watcher-vim' " AW client
-Plug 'dense-analysis/ale'           " Linter
-Plug 'valloric/youcompleteme'       " Code Completion Engine
-Plug 'hail2u/vim-css3-syntax'
-call plug#end()
-
-highligh GitGutterAdd    guifg=#009900 ctermfg=0 ctermbg=2
-highligh GitGutterChange guifg=#bbbb00 ctermfg=0 ctermbg=3
-highligh GitGutterDelete guifg=#ff2222 ctermfg=0 ctermbg=1
+highlight GitGutterAdd    guifg=#009900 ctermfg=0 ctermbg=2
+highlight GitGutterChange guifg=#bbbb00 ctermfg=0 ctermbg=3
+highlight GitGutterDelete guifg=#ff2222 ctermfg=0 ctermbg=1
 function! GitStatus()
   let [a,m,r] = GitGutterGetHunkSummary()
   return printf('+%d ~%d -%d', a, m, r)
@@ -33,17 +34,16 @@ endfunction
 set updatetime=100
 " set statusline+=%{GitStatus()}
 
-let g:ctrlp_map = ''
-let g:ctrlp_cmd = 'CtrlP'
-nnoremap <C-P> :CtrlPBuffer<CR>
-nnoremap gb :b#<CR>
-
-let g:user_emmet_leader_key = '\'
-let g:user_emmet_install_global = 0
-autocmd FileType html,css,php EmmetInstall
-
+Plug 'valloric/matchtagalways'      " Highlight closing HTML/XML tags
+Plug 'vim-airline/vim-airline'      " Vim theming
+Plug 'ActivityWatch/aw-watcher-vim' " AW client
+Plug 'dense-analysis/ale'           " Linter
 let g:ale_set_loclist = 0
 let g:ale_set_quickfix = 1
+
+Plug 'valloric/youcompleteme'       " Code Completion Engine
+Plug 'hail2u/vim-css3-syntax'
+call plug#end()
 
 let mapleader='\'
 
@@ -55,6 +55,8 @@ set splitbelow
 set splitright
 set hidden
 
+
+set clipboard=unnamed
 set backspace=indent,eol,start
 set complete+=d
 set grepprg=grep\ -rnsI
