@@ -2,6 +2,16 @@
 
 This is my config files that I have on my system right now. Shell configs are from Manjaro default along with my own customization
 
+## System Information
+
+|Info Name     |Software|
+|--------------|--------|
+|Init system:  |systemd |
+|--------------|--------|
+|Default shell:|zsh     |
+|--------------|--------|
+|DE:           |KDE     |
+
 ## Features
 
 1. This dotfile repository does not need any dotfile manager.
