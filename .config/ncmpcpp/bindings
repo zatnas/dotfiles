@@ -38,8 +38,9 @@ def_key "g"
 def_key "G"
 	move_end
 
+def_key "0"
+	replay_song
 def_key "l"
 	seek_forward
-
 def_key "h"
 	seek_backward
