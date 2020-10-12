@@ -1,15 +1,17 @@
-alias vc="vimc"
-function vimc() {
-	if [ -f "$XDG_CONFIG_HOME/$1" ]; then 
-		command vim "$XDG_CONFIG_HOME/$1"
-	fi
+function vc() {
+	[ -f "$XDG_CONFIG_HOME/$1" ] || [ -d "$XDG_CONFIG_HOME/$1" ] && command vim "$XDG_CONFIG_HOME/$1"
 }
 
-alias vcf="vimcf"
-function vimcf() {
-	FILE="$(find $XDG_CONFIG_HOME -maxdepth 3 | fzf)"
-	if [ ! -z "$FILE" ]; then
-		command vim "$FILE"
+function vci() {
+	MYPWD="$PWD"
+	if command -v fd >/dev/null; then
+		cd "$HOME"
+		FILE="$(fd -Hp -t f --ignore-file $HOME/Documents/git/dotfiles/gitbare/info/exclude $HOME | fzf)"
+	else
+		FILE="$(find $XDG_CONFIG_HOME -maxdepth 3 | fzf)"
 	fi
-	unset FILE
+
+	[ ! -z "$FILE" ] && command vim "$FILE"
+	cd "$MYPWD"
+	unset FILE MYPWD
 }
