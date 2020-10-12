@@ -1,5 +1,6 @@
 autocenter_mode = yes
 
+ncmpcpp_directory = "/tmp/ncmpcpp"
 lyrics_directory = "/tmp/lyrics"
 
 visualizer_fifo_path = "/tmp/mpd.fifo"
