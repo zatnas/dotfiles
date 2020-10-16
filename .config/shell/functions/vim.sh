@@ -4,15 +4,14 @@ function vc() {
 
 function vci() {
 	MYPWD="$PWD"
-	FINDER=""
 
 	if false; then :;
-	elif command -v sk  >/dev/null; then
-		FINDER="$(command -v sk)"
 	elif command -v fzf >/dev/null; then
 		FINDER="$(command -v fzf)"
+	elif command -v sk  >/dev/null; then
+		FINDER="$(command -v sk)"
 	else
-		echo "Either skim or fzf is needed to be able to run this command"
+		echo "Either fzf or skim is needed to be able to run this command"
 	fi
 
 	cd "$HOME"
