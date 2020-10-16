@@ -1,3 +1,4 @@
+"XDG Directory Specification
 set undodir=$XDG_DATA_HOME/vim/undo
 set directory=$XDG_DATA_HOME/vim/swap
 set backupdir=$XDG_DATA_HOME/vim/backup
@@ -55,7 +56,7 @@ set splitbelow
 set splitright
 set hidden
 
-
+set linebreak
 set clipboard=unnamed
 set backspace=indent,eol,start
 set complete+=d
@@ -81,6 +82,8 @@ set tabstop=4
 set shiftwidth=0
 set softtabstop=4
 set smartindent
+
+nnoremap <silent> ZW :set wrap!<CR>
 
 syntax on
 filetype plugin on
