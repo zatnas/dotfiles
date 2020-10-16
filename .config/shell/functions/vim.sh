@@ -4,14 +4,26 @@ function vc() {
 
 function vci() {
 	MYPWD="$PWD"
-	if command -v fd >/dev/null; then
-		cd "$HOME"
-		FILE="$(fd -Hp -t f --ignore-file $HOME/Documents/git/dotfiles/gitbare/info/exclude $HOME | fzf)"
+	FINDER=""
+
+	if false; then :;
+	elif command -v sk  >/dev/null; then
+		FINDER="$(command -v sk)"
+	elif command -v fzf >/dev/null; then
+		FINDER="$(command -v fzf)"
 	else
-		FILE="$(find $XDG_CONFIG_HOME -maxdepth 3 | fzf)"
+		echo "Either skim or fzf is needed to be able to run this command"
+	fi
+
+	cd "$HOME"
+
+	if command -v fd >/dev/null; then
+		FILE="$(fd -Hp -t f --ignore-file $HOME/Documents/git/dotfiles/gitbare/info/exclude $HOME | $FINDER)"
+	else
+		FILE="$(find $XDG_CONFIG_HOME -maxdepth 3 | $FINDER)"
 	fi
 
 	[ ! -z "$FILE" ] && command vim "$FILE"
 	cd "$MYPWD"
-	unset FILE MYPWD
+	unset FILE MYPWD FINDER
 }
