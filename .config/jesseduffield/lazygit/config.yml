@@ -21,17 +21,17 @@ gui:
   scrollpastbottom: true
   sidepanelwidth: 0.3333
   theme:
-    activebordercolor:
-    - white
-    - bold
     commitlength:
       mouseevents: true
       show: true
       skipstashwarning: true
       skipunstagelinewarning: false
+    lighttheme: false
+    activebordercolor:
+    - white
+    - bold
     inactivebordercolor:
     - blue
-    lighttheme: false
     optionstextcolor:
     - #aaaaaa
     selectedlinebgcolor:
