@@ -8,8 +8,7 @@ function zz () {
 		opt="-n2"
 	fi
 
-	query="$*"
-	sel="$(zoxide query --list --score | $finder $opt --query "$query" --filter "$query" | head -1 | tr -s ' ' | sed 's/^\s\+//' | cut -d' ' -f2)" || \
+	sel="$(zoxide query --list --score | $finder $opt --query "$*" --filter "$*" | head -1 | sed 's/^\s\+[[:digit:]]\+\s\+//')" || \
 		return 1
 	cd "$sel"
 	unset sel query finder opt
