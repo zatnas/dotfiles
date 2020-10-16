@@ -7,12 +7,12 @@ This is my config files that I have on my system right now. Shell configs are fr
 |Info Name    |Software|
 |-------------|--------|
 |Init system  |systemd |
-|DE           |KDE     |
-|Shell        |zsh     |
+|Default DE   |KDE     |
+|Default Shell|zsh     |
 
 ## Features
 
-1. This dotfile repository does not need any dotfile manager.
+1. This dotfile repository does not need any other dotfile manager.
 2. This dotfile repository will not clutter your $HOME with unnecessary files and directories
 3. This dotfile repository requires `git init --bare` along with `--work-tree` and `--git-dir` options
 4. This dotfile repository provides a simple script that eases No 3.
@@ -25,5 +25,7 @@ git clone https://github.com/zethnest/dotfiles
 cd dotfiles
 ./git checkout -f config
 ```
+
+**WARNING: This is unprecedented. Proceed with caution!**
 
 ## Uninstall
