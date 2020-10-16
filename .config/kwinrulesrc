@@ -2,6 +2,16 @@
 update_info=kwinrules.upd:replace-placement-string-to-enum
 
 [1]
+Description=Application settings for mpv
+above=true
+aboverule=3
+noborder=true
+noborderrule=3
+wmclass=gl mpv
+wmclasscomplete=true
+wmclassmatch=1
+
+[2]
 Description=Application settings for scrcpy
 above=true
 aboverule=2
@@ -15,4 +25,4 @@ wmclass=scrcpy
 wmclassmatch=1
 
 [General]
-count=1
+count=2
