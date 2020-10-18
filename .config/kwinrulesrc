@@ -2,6 +2,77 @@
 update_info=kwinrules.upd:replace-placement-string-to-enum
 
 [1]
+Description=Window settings for
+above=true
+aboverule=3
+position=934,605
+positionrule=3
+size=346,195
+sizerule=3
+skippager=true
+skippagerrule=3
+skipswitcher=true
+skipswitcherrule=3
+skiptaskbar=true
+skiptaskbarrule=3
+title=Picture in Picture
+titlematch=1
+types=1
+wmclassmatch=1
+
+[2]
+Description=Window settings for konsole
+fullscreenrule=3
+title=Save Output From Breath2 — Konsole
+titlematch=1
+types=32
+wmclass=konsole
+wmclassmatch=1
+
+[3]
+Description=Window settings for konsole
+fullscreenrule=2
+title=Print Shell — Konsole
+titlematch=1
+types=32
+wmclass=konsole
+wmclassmatch=1
+
+[4]
+Description=Window settings for konsole
+fullscreenrule=2
+title=Edit Profile ".*" — Konsole
+titlematch=3
+types=32
+wmclass=konsole
+wmclassmatch=1
+
+[5]
+Description=Window settings for konsole
+fullscreenrule=2
+title=Configure — Konsole
+titlematch=1
+types=32
+wmclass=konsole
+wmclassmatch=1
+
+[6]
+Description=Window settings for konsole
+fullscreenrule=2
+title=Current Tab Settings — Konsole
+titlematch=1
+types=32
+wmclass=konsole
+wmclassmatch=1
+
+[7]
+Description=Application settings for konsole
+fullscreen=true
+fullscreenrule=3
+wmclass=konsole
+wmclassmatch=1
+
+[8]
 Description=Application settings for mpv
 above=true
 aboverule=3
@@ -11,7 +82,7 @@ wmclass=gl mpv
 wmclasscomplete=true
 wmclassmatch=1
 
-[2]
+[9]
 Description=Application settings for scrcpy
 above=true
 aboverule=2
@@ -25,4 +96,4 @@ wmclass=scrcpy
 wmclassmatch=1
 
 [General]
-count=2
+count=9
