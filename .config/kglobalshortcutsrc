@@ -23,9 +23,8 @@ _k_friendly_name=KDE Daemon
 display=Display\tMeta+P,Display\tMeta+P,Switch Display
 
 [khotkeys]
-_k_friendly_name=KDE Daemon
+_k_friendly_name=System Settings
 {02fb4f98-7fdb-44ef-a115-b9ec0ed6c9b0}=Meta+Ctrl+Volume Up,none,mpc Random
-{2de26014-04ed-41a3-9c80-13831376215c}=Ctrl+Alt+C,none,AltWin Enter
 {31458063-7005-4b10-aa0d-93625b906272}=Meta+Shift+Volume Down,none,mpc Previous
 {42a49015-97cd-4fb7-8f78-d3055ebf781f}=Meta+Shift+Return,none,Launch Konsole
 {4c431cad-b6f1-4a26-9026-620c3d1383b1}=Meta+Z,none,Enter
@@ -216,9 +215,9 @@ view_zoom_out=Meta+-,Meta+-,Zoom Out
 _k_friendly_name=Media Controller
 mediavolumedown=none,none,Media volume down
 mediavolumeup=none,none,Media volume up
-nextmedia=Media Next,Media Next,Media playback next
-playpausemedia=Media Play,Media Play,Play/Pause media playback
-previousmedia=Media Previous,Media Previous,Media playback previous
+nextmedia=Media Next\tCtrl+Volume Down,Media Next,Media playback next
+playpausemedia=Ctrl+Volume Mute\tMedia Play,Media Play,Play/Pause media playback
+previousmedia=Ctrl+Volume Up\tMedia Previous,Media Previous,Media playback previous
 stopmedia=Media Stop,Media Stop,Stop media playback
 
 [org.kde.dolphin.desktop]
