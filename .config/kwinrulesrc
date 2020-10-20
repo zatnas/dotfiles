@@ -2,13 +2,13 @@
 update_info=kwinrules.upd:replace-placement-string-to-enum
 
 [1]
-Description=Window settings for
+Description=Window settings for Picture in Picture
 above=true
 aboverule=3
 position=934,605
-positionrule=3
+positionrule=2
 size=346,195
-sizerule=3
+sizerule=2
 skippager=true
 skippagerrule=3
 skipswitcher=true
