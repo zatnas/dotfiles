@@ -12,8 +12,8 @@ Plug 'airblade/vim-gitgutter'       " Git diff status
 Plug 'kien/ctrlp.vim'               " Fuzzy finder
 let g:ctrlp_map = ''
 let g:ctrlp_cmd = 'CtrlP'
-nnoremap <C-P> :CtrlPBuffer<CR>
-nnoremap gb :b#<CR>
+nnoremap <silent> <C-P> :CtrlPBuffer<CR>
+nnoremap <silent> gb :b#<CR>
 
 Plug 'mattn/emmet-vim'              " Emmet for HTML & CSS
 let g:user_emmet_leader_key = '\'
@@ -29,18 +29,22 @@ highlight GitGutterAdd    guifg=#009900 ctermfg=0 ctermbg=2
 highlight GitGutterChange guifg=#bbbb00 ctermfg=0 ctermbg=3
 highlight GitGutterDelete guifg=#ff2222 ctermfg=0 ctermbg=1
 function! GitStatus()
-  let [a,m,r] = GitGutterGetHunkSummary()
-  return printf('+%d ~%d -%d', a, m, r)
+	let [a,m,r] = GitGutterGetHunkSummary()
+	return printf('+%d ~%d -%d', a, m, r)
 endfunction
 set updatetime=100
 " set statusline+=%{GitStatus()}
 
+Plug 'zethnest/ack.vim'
+if executable('ag')
+	let g:ackprg = 'ag --vimgrep'
+endif
 Plug 'valloric/matchtagalways'      " Highlight closing HTML/XML tags
 Plug 'vim-airline/vim-airline'      " Vim theming
 Plug 'ActivityWatch/aw-watcher-vim' " AW client
 Plug 'dense-analysis/ale'           " Linter
-let g:ale_set_loclist = 0
-let g:ale_set_quickfix = 1
+let g:ale_set_loclist = 1
+let g:ale_set_quickfix = 0
 
 Plug 'valloric/youcompleteme'       " Code Completion Engine
 Plug 'hail2u/vim-css3-syntax'
