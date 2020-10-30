@@ -13,6 +13,7 @@
 	pl = pull
 	ps = push
 	st = status
+	cln = clean
 
 [core]
     pager = delta
