@@ -52,6 +52,7 @@
 .config/xsettingsd
 .config/webex-teams-nativefier**
 
+.config/bottom/bottom.toml
 .config/QtProject.conf
 .config/Trolltech.conf
 .config/activitywatch
