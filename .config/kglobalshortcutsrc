@@ -23,10 +23,11 @@ _k_friendly_name=KDE Daemon
 display=Display\tMeta+P,Display\tMeta+P,Switch Display
 
 [khotkeys]
-_k_friendly_name=System Settings
+_k_friendly_name=KDE Daemon
 {02fb4f98-7fdb-44ef-a115-b9ec0ed6c9b0}=Meta+Ctrl+Volume Up,none,mpc Random
 {31458063-7005-4b10-aa0d-93625b906272}=Meta+Shift+Volume Down,none,mpc Previous
 {42a49015-97cd-4fb7-8f78-d3055ebf781f}=Meta+Shift+Return,none,Launch Konsole
+{470b0a36-9658-42a4-afe5-4f4715c3df1c}=Launch (3),none,Toggle LaptopStick
 {4c431cad-b6f1-4a26-9026-620c3d1383b1}=Meta+Z,none,Enter
 {5b899cc7-9c53-4e7b-a3a9-d465fc854e24}=Meta+X,none,Backspace
 {781361c6-22de-4b23-aa84-6d2e9b9e675d}=Meta+D,none,dmenu
@@ -57,7 +58,7 @@ Lock Session=Meta+L\tCtrl+Alt+L\tScreensaver,Meta+L\tCtrl+Alt+L\tScreensaver,Loc
 Log Out=Ctrl+Alt+Del,none,Log Out
 Log Out Without Confirmation=Ctrl+Alt+Shift+Del,none,Log Out Without Confirmation
 Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp,none,Reboot Without Confirmation
-_k_friendly_name=Session Management
+_k_friendly_name=System Settings
 
 [kwin]
 Activate Window Demanding Attention=Ctrl+Alt+A,Ctrl+Alt+A,Activate Window Demanding Attention
@@ -70,7 +71,9 @@ ExposeClass=Ctrl+F7,Ctrl+F7,Toggle Present Windows (Window class)
 FlipSwitchAll=none,none,Toggle Flip Switch (All desktops)
 FlipSwitchCurrent=none,none,Toggle Flip Switch (Current desktop)
 Increase Opacity=none,none,Increase Opacity of Active Window by 5 %
+Invert=Meta+Ctrl+I,Meta+Ctrl+I,Toggle Invert Effect
 Invert Screen Colors=none,none,Invert Screen Colors
+InvertWindow=Meta+Ctrl+U,Meta+Ctrl+U,Toggle Invert Effect on Window
 Kill Window=Ctrl+Alt+Esc,Ctrl+Alt+Esc,Kill Window
 MoveMouseToCenter=Meta+F6,Meta+F6,Move Mouse to Center
 MoveMouseToFocus=Meta+F5,Meta+F5,Move Mouse to Focus
@@ -79,7 +82,7 @@ MoveZoomLeft=none,none,Move Zoomed Area to Left
 MoveZoomRight=none,none,Move Zoomed Area to Right
 MoveZoomUp=none,none,Move Zoomed Area Upwards
 Setup Window Shortcut=none,none,Setup Window Shortcut
-Show Desktop=,Meta+D,Show Desktop
+Show Desktop=Meta+Space,Meta+D,Show Desktop
 ShowDesktopGrid=Ctrl+F8,Ctrl+F8,Show Desktop Grid
 Sphere=none,none,Desktop Sphere
 Suspend Compositing=Alt+Shift+F12,Alt+Shift+F12,Suspend Compositing
@@ -215,9 +218,9 @@ view_zoom_out=Meta+-,Meta+-,Zoom Out
 _k_friendly_name=Media Controller
 mediavolumedown=none,none,Media volume down
 mediavolumeup=none,none,Media volume up
-nextmedia=Media Next\tCtrl+Volume Down,Media Next,Media playback next
+nextmedia=Ctrl+Volume Up\tMedia Next,Media Next,Media playback next
 playpausemedia=Ctrl+Volume Mute\tMedia Play,Media Play,Play/Pause media playback
-previousmedia=Ctrl+Volume Up\tMedia Previous,Media Previous,Media playback previous
+previousmedia=Ctrl+Volume Down\tMedia Previous,Media Previous,Media playback previous
 stopmedia=Media Stop,Media Stop,Stop media playback
 
 [org.kde.dolphin.desktop]
@@ -250,7 +253,7 @@ Turn Off Screen=none,none,Turn Off Screen
 _k_friendly_name=Power Management
 
 [plasmashell]
-_k_friendly_name=Plasma
+_k_friendly_name=Activity switching
 activate task manager entry 1=Meta+1,Meta+1,Activate Task Manager Entry 1
 activate task manager entry 10=Meta+0,Meta+0,Activate Task Manager Entry 10
 activate task manager entry 2=Meta+2,Meta+2,Activate Task Manager Entry 2
