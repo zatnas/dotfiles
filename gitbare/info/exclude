@@ -50,6 +50,7 @@
 .config/syncthing
 .config/systemd/user/default.target.wants
 .config/xsettingsd
+.config/webex-teams-nativefier**
 
 .config/QtProject.conf
 .config/Trolltech.conf
