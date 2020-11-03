@@ -5,20 +5,21 @@ update_info=kwinrules.upd:replace-placement-string-to-enum
 Description=Window settings for Picture in Picture
 above=true
 aboverule=3
+ignoregeometry=true
+ignoregeometryrule=2
 position=934,605
-positionrule=2
+positionrule=3
 size=346,195
-sizerule=2
+sizerule=3
 skippager=true
 skippagerrule=3
 skipswitcher=true
 skipswitcherrule=3
 skiptaskbar=true
 skiptaskbarrule=3
-title=Picture in Picture
-titlematch=1
-types=1
-wmclassmatch=1
+title=Picture.*in.*Picture
+titlematch=3
+types=257
 
 [2]
 Description=Window settings for konsole
@@ -66,23 +67,20 @@ wmclass=konsole
 wmclassmatch=1
 
 [7]
-Description=Application settings for konsole
-fullscreen=true
-fullscreenrule=3
-wmclass=konsole
-wmclassmatch=1
-
-[8]
 Description=Application settings for mpv
 above=true
 aboverule=3
 noborder=true
 noborderrule=3
+skippager=true
+skippagerrule=1
+skipswitcher=true
+skipswitcherrule=1
 wmclass=gl mpv
 wmclasscomplete=true
 wmclassmatch=1
 
-[9]
+[8]
 Description=Application settings for scrcpy
 above=true
 aboverule=2
@@ -96,4 +94,4 @@ wmclass=scrcpy
 wmclassmatch=1
 
 [General]
-count=9
+count=8
