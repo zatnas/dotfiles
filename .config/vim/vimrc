@@ -8,10 +8,6 @@ set runtimepath=$XDG_CONFIG_HOME/vim,$VIMRUNTIME,$XDG_CONFIG_HOME/vim/after
 let g:netrw_home=$XDG_DATA_HOME.'/vim'
 
 call plug#begin("$XDG_CONFIG_HOME/vim/plugged")
-Plug 'kien/ctrlp.vim'               " Fuzzy finder
-let g:ctrlp_map = ''
-let g:ctrlp_cmd = 'CtrlP'
-nnoremap <silent> <C-P> :CtrlPBuffer<CR>
 Plug 'ActivityWatch/aw-watcher-vim'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'mg979/vim-visual-multi'
@@ -39,6 +35,11 @@ highlight GitGutterChange guifg=#bbbb00 ctermfg=3 ctermbg=0
 highlight GitGutterDelete guifg=#ff2222 ctermfg=1 ctermbg=0
 set signcolumn=yes
 set updatetime=50
+
+"Plug 'kien/ctrlp.vim' " In favor of fzf
+"let g:ctrlp_map = ''
+"let g:ctrlp_cmd = 'CtrlP'
+"nnoremap <silent> <C-P> :CtrlPBuffer<CR>
 
 let g:fzf_command_prefix = 'Fzf'
 Plug 'junegunn/fzf'
