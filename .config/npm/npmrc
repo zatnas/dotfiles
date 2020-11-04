@@ -1,4 +1,4 @@
-prefix=${XDG_DATA_HOME}/npm
-cache=${XDG_CACHE_HOME}/npm
-tmp=${XDG_RUNTIME_DIR}/npm
-init-module=${XDG_CONFIG_HOME}/npm/config/npm-init.js
+prefix=${NPM_HOME}
+cache=${NPM_CACHE}
+tmp=${NPM_TMP}
+init-module=${NPM_INIT_MODULE}
