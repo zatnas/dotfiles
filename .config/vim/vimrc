@@ -81,6 +81,7 @@ set laststatus=2
 set noswapfile
 set shiftround
 set tags=./tags;,tags;
+set listchars=tab:░▒,trail:▓,space:∙,nbsp:,conceal:
 
 set foldlevelstart=999
 set foldmethod=indent
@@ -98,6 +99,8 @@ set softtabstop=4
 set smartindent
 
 nnoremap <silent> ZW :set wrap!<CR>
+nnoremap <silent> ZH :set list!<CR>
+nnoremap <silent> Zh :set hlsearch!<CR>
 nnoremap <silent> gb :b#<CR>
 
 syntax on
