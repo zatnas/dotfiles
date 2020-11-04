@@ -12,7 +12,6 @@ Plug 'kien/ctrlp.vim'               " Fuzzy finder
 let g:ctrlp_map = ''
 let g:ctrlp_cmd = 'CtrlP'
 nnoremap <silent> <C-P> :CtrlPBuffer<CR>
-nnoremap <silent> gb :b#<CR>
 Plug 'ActivityWatch/aw-watcher-vim'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'mg979/vim-visual-multi'
@@ -99,6 +98,7 @@ set softtabstop=4
 set smartindent
 
 nnoremap <silent> ZW :set wrap!<CR>
+nnoremap <silent> gb :b#<CR>
 
 syntax on
 filetype plugin on
