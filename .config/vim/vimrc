@@ -8,51 +8,61 @@ set runtimepath=$XDG_CONFIG_HOME/vim,$VIMRUNTIME,$XDG_CONFIG_HOME/vim/after
 let g:netrw_home=$XDG_DATA_HOME.'/vim'
 
 call plug#begin("$XDG_CONFIG_HOME/vim/plugged")
-Plug 'airblade/vim-gitgutter'       " Git diff status
 Plug 'kien/ctrlp.vim'               " Fuzzy finder
 let g:ctrlp_map = ''
 let g:ctrlp_cmd = 'CtrlP'
 nnoremap <silent> <C-P> :CtrlPBuffer<CR>
 nnoremap <silent> gb :b#<CR>
+Plug 'ActivityWatch/aw-watcher-vim'
+Plug 'hail2u/vim-css3-syntax'
+Plug 'mg979/vim-visual-multi'
+Plug 'othree/html5.vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'tmhedberg/matchit'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+Plug 'valloric/matchtagalways'
+Plug 'zethnest/ack.vim'
+Plug 'vim-airline/vim-airline'
+"Plug 'valloric/youcompleteme' " Slows startup-time
+
+Plug 'airblade/vim-gitgutter'
+let g:gitgutter_sign_added    = '●'
+let g:gitgutter_sign_removed  = '●'
+let g:gitgutter_sign_removed_above_and_below  = '●'
+let g:gitgutter_sign_removed_first_line  = '●'
+let g:gitgutter_sign_modified = '●'
+let g:gitgutter_sign_modified_removed = '●'
+highlight clear SignColumn
+highlight GitGutterAdd    guifg=#009900 ctermfg=2 ctermbg=0
+highlight GitGutterChange guifg=#bbbb00 ctermfg=3 ctermbg=0
+highlight GitGutterDelete guifg=#ff2222 ctermfg=1 ctermbg=0
+set signcolumn=yes
+set updatetime=50
+
+let g:fzf_command_prefix = 'Fzf'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+let g:fzf_preview_window = []
+nnoremap <silent> <C-P> :FzfBuffers<CR>
+if executable('rg')
+	let g:ackprg = 'rg --vimgrep'
+elseif executable('ag')
+	let g:ackprg = 'ag --vimgrep'
+endif
 
 Plug 'mattn/emmet-vim'              " Emmet for HTML & CSS
 let g:user_emmet_leader_key = '\'
 let g:user_emmet_install_global = 0
 autocmd FileType html,css,php EmmetInstall
 
-Plug 'mg979/vim-visual-multi'       " Sublime Text-like multi cursor
-Plug 'othree/html5.vim'             " Better HTML5
-Plug 'tmhedberg/matchit'            " Better pairing
-Plug 'tpope/vim-surround'           " Better quoting and parenthesizing
-Plug 'tpope/vim-fugitive'           " Git integration
-highlight GitGutterAdd    guifg=#009900 ctermfg=0 ctermbg=2
-highlight GitGutterChange guifg=#bbbb00 ctermfg=0 ctermbg=3
-highlight GitGutterDelete guifg=#ff2222 ctermfg=0 ctermbg=1
-function! GitStatus()
-	let [a,m,r] = GitGutterGetHunkSummary()
-	return printf('+%d ~%d -%d', a, m, r)
-endfunction
-set updatetime=100
-" set statusline+=%{GitStatus()}
-
-Plug 'zethnest/ack.vim'
-if executable('ag')
-	let g:ackprg = 'ag --vimgrep'
-endif
-Plug 'valloric/matchtagalways'      " Highlight closing HTML/XML tags
-Plug 'vim-airline/vim-airline'      " Vim theming
-Plug 'ActivityWatch/aw-watcher-vim' " AW client
 Plug 'dense-analysis/ale'           " Linter
 let g:ale_set_loclist = 1
 let g:ale_set_quickfix = 0
-
-Plug 'valloric/youcompleteme'       " Code Completion Engine
-Plug 'hail2u/vim-css3-syntax'
 call plug#end()
 
 let mapleader='\'
-
-set signcolumn=yes
 
 set undofile
 
