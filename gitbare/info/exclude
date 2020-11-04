@@ -7,6 +7,7 @@
 
 *
 !.profile
+!.zprofile
 !.config
 !.config/**
 
@@ -29,6 +30,7 @@
 !.config/broot/conf.toml
 
 .config/Brackets
+.config/GIMP
 .config/KDE
 .config/android
 .config/chromium
