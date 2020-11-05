@@ -10,7 +10,6 @@ let g:netrw_home=$XDG_DATA_HOME.'/vim'
 call plug#begin("$XDG_CONFIG_HOME/vim/plugged")
 Plug 'ActivityWatch/aw-watcher-vim'
 Plug 'hail2u/vim-css3-syntax'
-Plug 'mg979/vim-visual-multi'
 Plug 'othree/html5.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'tmhedberg/matchit'
@@ -21,6 +20,7 @@ Plug 'valloric/matchtagalways'
 Plug 'zethnest/ack.vim'
 Plug 'vim-airline/vim-airline'
 "Plug 'valloric/youcompleteme' " Slows startup-time
+"Plug 'mg979/vim-visual-multi' " Unused
 
 Plug 'airblade/vim-gitgutter'
 let g:gitgutter_sign_added    = '●'
