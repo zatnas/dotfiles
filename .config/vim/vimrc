@@ -65,39 +65,44 @@ call plug#end()
 let mapleader='\'
 
 set undofile
+set noswapfile
 
+set hidden
 set splitbelow
 set splitright
-set hidden
 
-set diffopt+=vertical
 set linebreak
-set clipboard=unnamed
-set backspace=indent,eol,start
-set complete+=d
-set grepprg=grep\ -rnsI
+set shiftround
 set incsearch
+
 set mouse=a
 set laststatus=2
-set noswapfile
-set shiftround
-set tags=./tags;,tags;
-set listchars=tab:░▒,trail:▓,space:∙,nbsp:,conceal:
+set clipboard=unnamed
+set backspace=indent,eol,start
+set grepprg=grep\ -rnsI
 
+set complete+=d
+set diffopt+=vertical
+set tags+=.git/tags,.git/TAGS
+
+set listchars=tab:░▒,trail:▓,space:∙,nbsp:,conceal:
+" set iskeyword=@,48-57,192-255 " originally @,48-57,_,192-255
+
+" Folding
 set foldlevelstart=999
 set foldmethod=indent
 
-" set iskeyword=@,48-57,192-255 " originally @,48-57,_,192-255
-
+" Command Line Completion
 set wildcharm=<C-z>
 set wildmenu
 set wildmode=full
 
+"Indentation
 set autoindent
+set smartindent
 set tabstop=4
 set shiftwidth=0
 set softtabstop=4
-set smartindent
 
 nnoremap <silent> ZW :set wrap!<CR>
 nnoremap <silent> ZH :set list!<CR>
