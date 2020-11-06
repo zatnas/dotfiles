@@ -19,6 +19,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'valloric/matchtagalways'
 Plug 'zethnest/ack.vim'
 Plug 'vim-airline/vim-airline'
+"Plug 'neoclide/coc.nvim', {'branch': 'release'} " High RAM Usage
 "Plug 'valloric/youcompleteme' " Slows startup-time
 "Plug 'mg979/vim-visual-multi' " Unused
 
