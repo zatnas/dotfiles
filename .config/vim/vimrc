@@ -17,7 +17,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'valloric/matchtagalways'
-Plug 'zethnest/ack.vim'
 Plug 'vim-airline/vim-airline'
 "Plug 'neoclide/coc.nvim', {'branch': 'release'} " High RAM Usage
 "Plug 'valloric/youcompleteme' " Slows startup-time
@@ -37,6 +36,15 @@ highlight GitGutterDelete guifg=#ff2222 ctermfg=1 ctermbg=0
 set signcolumn=yes
 set updatetime=50
 
+Plug 'zethnest/ack.vim'
+nnoremap g/ :AckBuffer ""<Left>
+nnoremap g? :Ack ""<Left>
+if executable('rg')
+	let g:ackprg = 'rg --vimgrep'
+elseif executable('ag')
+	let g:ackprg = 'ag --vimgrep'
+endif
+
 "Plug 'kien/ctrlp.vim' " In favor of fzf
 "let g:ctrlp_map = ''
 "let g:ctrlp_cmd = 'CtrlP'
@@ -47,11 +55,6 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 let g:fzf_preview_window = []
 nnoremap <silent> <C-P> :FzfBuffers<CR>
-if executable('rg')
-	let g:ackprg = 'rg --vimgrep'
-elseif executable('ag')
-	let g:ackprg = 'ag --vimgrep'
-endif
 
 Plug 'mattn/emmet-vim'
 let g:user_emmet_leader_key = '\'
