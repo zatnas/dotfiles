@@ -52,12 +52,12 @@ elseif executable('ag')
 	let g:ackprg = 'ag --vimgrep'
 endif
 
-Plug 'mattn/emmet-vim'              " Emmet for HTML & CSS
+Plug 'mattn/emmet-vim'
 let g:user_emmet_leader_key = '\'
 let g:user_emmet_install_global = 0
 autocmd FileType html,css,php EmmetInstall
 
-Plug 'dense-analysis/ale'           " Linter
+Plug 'dense-analysis/ale'
 let g:ale_set_loclist = 1
 let g:ale_set_quickfix = 0
 call plug#end()
