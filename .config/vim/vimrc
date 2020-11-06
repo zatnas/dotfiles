@@ -104,6 +104,9 @@ set tabstop=4
 set shiftwidth=0
 set softtabstop=4
 
+set exrc   " Read .vimrc in pwd
+set secure " Disabled commands in pwd .vimrc
+
 nnoremap <silent> ZW :set wrap!<CR>
 nnoremap <silent> ZH :set list!<CR>
 nnoremap <silent> Zh :set hlsearch!<CR>
