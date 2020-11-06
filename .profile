@@ -39,6 +39,8 @@ export GOPATH="$XDG_DATA_HOME/go"
 export GRADLE_USER_HOME="$XDG_DATA_HOME/gradle"
 export MYSQL_HISTFILE="$XDG_DATA_HOME/mysql_history"
 export SQLITE_HISTORY="$XDG_DATA_HOME/sqlite_history"
+export NODE_REPL_HISTORY="$XDG_DATA_HOME/node_repl_history"
+export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
 
 export _JAVA_OPTIONS=""
 export _JAVA_OPTIONS="$_JAVA_OPTIONS -Dawt.useSystemAAFontSettings=on"
