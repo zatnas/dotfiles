@@ -18,6 +18,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'valloric/matchtagalways'
 Plug 'vim-airline/vim-airline'
+Plug 'junegunn/vim-easy-align'
 "Plug 'neoclide/coc.nvim', {'branch': 'release'} " High RAM Usage
 "Plug 'valloric/youcompleteme' " Slows startup-time
 "Plug 'mg979/vim-visual-multi' " Unused
