@@ -6,7 +6,8 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 
-export MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc"
+export VIMDIR="$XDG_CONFIG_HOME/vim"
+export MYVIMRC="$VIMDIR/vimrc"
 export VIMINIT="source $MYVIMRC"
 
 export ADB_VENDOR_KEYS="$XDG_CONFIG_HOME/android"
