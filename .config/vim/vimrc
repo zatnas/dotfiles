@@ -114,10 +114,18 @@ set softtabstop=4
 set exrc   " Read .vimrc in pwd
 set secure " Disabled commands in pwd .vimrc
 
+nnoremap s <NOP>
+nnoremap S <NOP>
+
 nnoremap <silent> ZW :set wrap!<CR>
 nnoremap <silent> ZH :set list!<CR>
 nnoremap <silent> Zh :set hlsearch!<CR>
 nnoremap <silent> gb :b#<CR>
+
+inoremap <C-B> <Left>
+inoremap <C-F> <Right>
+inoremap <C-A> <Home>
+inoremap <C-E> <End>
 
 syntax on
 filetype plugin on
