@@ -5,6 +5,7 @@ This is my config files that I have on my system right now. Shell configs are fr
 ## System Information
 
 | Info Name   | Software |
+| ---         | ---      |
 | Init System | systemd  |
 | DE          | KDE      |
 | Shell       | zsh      |
