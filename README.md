@@ -4,11 +4,11 @@ This is my config files that I have on my system right now. Shell configs are fr
 
 ## System Information
 
-|Info Name    |Software|
-|-------------|--------|
-|Init system  |systemd |
-|Default DE   |KDE     |
-|Default Shell|zsh     |
+| Info Name   | Software |
+| Init System | systemd  |
+| DE          | KDE      |
+| Shell       | zsh      |
+| Editor      | vim      |
 
 ## Features
 
