@@ -91,9 +91,9 @@ set splitright
 set linebreak
 set shiftround
 set incsearch
-
-set mouse=a
 set laststatus=2
+
+set mouse=nvc
 set clipboard=unnamed
 set backspace=indent,eol,start
 set grepprg=grep\ -rnsI
