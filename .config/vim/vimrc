@@ -89,7 +89,7 @@ set splitbelow
 set splitright
 
 set linebreak
-set shiftround
+set nowrap
 set incsearch
 set laststatus=2
 
@@ -117,6 +117,7 @@ set wildmode=full
 
 "Indentation
 set autoindent
+set shiftround
 set smartindent
 set tabstop=4
 set shiftwidth=0
