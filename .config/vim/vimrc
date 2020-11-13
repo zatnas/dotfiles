@@ -72,6 +72,11 @@ let g:ale_set_quickfix = 0
 
 Plug 'junegunn/vim-easy-align'
 vmap ga <Plug>(EasyAlign)
+
+if has('nvim')
+	Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+	let g:deoplete#enable_at_startup = 1
+endif
 call plug#end()
 
 let mapleader='\'
