@@ -81,13 +81,16 @@ call plug#end()
 
 let mapleader='\'
 
+" Extra Files Management
 set undofile
 set noswapfile
 
+" Window & Buffer
 set hidden
 set splitbelow
 set splitright
 
+" UI
 set linebreak
 set nowrap
 set incsearch
