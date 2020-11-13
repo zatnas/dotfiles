@@ -101,6 +101,7 @@ set grepprg=grep\ -rnsI
 set complete+=d
 set diffopt+=vertical
 set tags+=.git/tags,.git/TAGS
+set history=10000
 
 set listchars=tab:░▒,trail:▓,space:∙,nbsp:,conceal:
 " set iskeyword=@,48-57,192-255 " originally @,48-57,_,192-255
