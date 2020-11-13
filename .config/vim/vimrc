@@ -50,7 +50,7 @@ elseif executable('ag')
 	let g:ackprg = 'ag --vimgrep'
 endif
 
-"Plug 'kien/ctrlp.vim' " In favor of fzf
+"Plug 'kien/ctrlp.vim' " Fzf is slower but better fuzzy match
 "let g:ctrlp_map = ''
 "let g:ctrlp_cmd = 'CtrlP'
 "nnoremap <silent> <C-P> :CtrlPBuffer<CR>
