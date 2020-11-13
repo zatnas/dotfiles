@@ -133,6 +133,9 @@ nnoremap <silent> ZH :set list!<CR>
 nnoremap <silent> Zh :set hlsearch!<CR>
 nnoremap <silent> gb :b#<CR>
 
+nnoremap <silent> gc gnc
+inoremap <silent> <C-G> <ESC>gnc
+
 inoremap <C-B> <Left>
 inoremap <C-F> <Right>
 inoremap <C-A> <Home>
