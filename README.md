@@ -1,4 +1,4 @@
-# Zethnest Dot Files
+# Zatnas Dot Files
 
 This is my config files that I have on my system right now. Shell configs are from Manjaro default along with my own customization
 
@@ -13,20 +13,25 @@ This is my config files that I have on my system right now. Shell configs are fr
 
 ## Features
 
-1. This dotfile repository does not need any other dotfile manager.
-2. This dotfile repository will not clutter your $HOME with unnecessary files and directories
-3. This dotfile repository requires `git init --bare` along with `--work-tree` and `--git-dir` options
-4. This dotfile repository provides a simple script that eases No 3.
-5. If you use [lazygit](https://github.com/jesseduffield/lazygit), this dotfile repository provides a simple script to use it.
+- Does not need any other dotfile manager.
+- Will not clutter your $HOME with unnecessary files and directories
+- Provides a simple script to use [lazygit](https://github.com/jesseduffield/lazygit)
+
+### Shell Feature
+
+- Provides auto sudo escalation for:
+  - dhclient
+  - ntpdate
+  - pacman
+- Autostart docker if service not yet started
 
 ## Installation
+
+Installation of this dotfile is destructive. Do a backup and proceed at your own risk.
 
 ```terminal
 git clone https://github.com/zethnest/dotfiles
 cd dotfiles
+./git fetch --all
 ./git checkout -f config
 ```
-
-**WARNING: This is unprecedented. Proceed with caution!**
-
-## Uninstall
