@@ -2,28 +2,34 @@
 
 export EDITOR="vim"
 
+# XDG
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 
+# Vim
 export VIMDIR="$XDG_CONFIG_HOME/vim"
 export MYVIMRC="$VIMDIR/vimrc"
 export VIMINIT="source $MYVIMRC"
 
+# Android / ADB
 export ADB_VENDOR_KEYS="$XDG_CONFIG_HOME/android"
 export ANDROID_AVD_HOME="$XDG_DATA_HOME/android/"
 export ANDROID_EMULATOR_HOME="$XDG_DATA_HOME/android/"
 export ANDROID_SDK_HOME="$XDG_CONFIG_HOME/android"
 
+# Less
 export LESSHISTFILE="$XDG_CACHE_HOME/less/history"
 export LESSKEY="$XDG_CONFIG_HOME/less/lesskey"
 
+# NPM
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
 export NPM_HOME="$XDG_DATA_HOME/npm"
 export NPM_CACHE="$XDG_CACHE_HOME/npm"
 export NPM_TMP="$XDG_RUNTIME_DIR/npm"
 export NPM_INIT_MODULE="$XDG_CONFIG_HOME/npm/config/npm-init.js"
 
+# Config files
 export DOCKER_CONFIG="$XDG_CONFIG_HOME/docker"
 export GTK2_RC_FILES="/etc/gtk-2.0/gtkrc:$XDG_CONFIG_HOME/gtkrc-2.0"
 export GTK_RC_FILES="/etc/gtk/gtkrc:$XDG_CONFIG_HOME/gtkrc"
@@ -34,6 +40,7 @@ export TASKRC="$XDG_CONFIG_HOME/task/taskrc"
 export WINEPREFIX="$XDG_DATA_HOME/wineprefixes/default"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 
+# Data files
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export GNUPGHOME="$XDG_DATA_HOME/gnupg"
 export GOPATH="$XDG_DATA_HOME/go"
